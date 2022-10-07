@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quizz</title>
+</head>
+<body>
+    <div th:each="q : ${questao}">
+        <h1 th:text="${q.questao}"></h1>
+        <div th:each="a : ${q.alternativas}">
+            <h1 th:text="${a.titulo}"></h1>
+        </div>
+    </div>
+</body>
+</html>
